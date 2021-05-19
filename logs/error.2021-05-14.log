@@ -1,0 +1,636 @@
+[2021-05-14 09:29:43] api[my-project].ERROR: Directus\Authentication\Exception\InvalidUserCredentialsException: Invalid user credentials in D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\core\Directus\Authentication\Provider.php:173
+Stack trace:
+#0 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\core\Directus\Authentication\Provider.php(129): Directus\Authentication\Provider->findUserWithCredentials
+#1 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\core\Directus\Services\AuthService.php(59): Directus\Authentication\Provider->login
+#2 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\endpoints\Auth.php(67): Directus\Services\AuthService->loginWithCredentials
+#3 [internal function]: Directus\Api\Routes\Auth->authenticate
+#4 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\Handlers\Strategies\RequestResponse.php(40): call_user_func
+#5 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\Route.php(281): Slim\Handlers\Strategies\RequestResponse->__invoke
+#6 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\core\Directus\Application\Http\Middleware\TableGatewayMiddleware.php(25): Slim\Route->__invoke
+#7 [internal function]: Directus\Application\Http\Middleware\TableGatewayMiddleware->__invoke
+#8 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#9 [internal function]: Slim\DeferredCallable->__invoke
+#10 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#11 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\core\Directus\Application\Http\Middleware\DatabaseMigrationMiddleware.php(15): Slim\Route->Slim\{closure}
+#12 [internal function]: Directus\Application\Http\Middleware\DatabaseMigrationMiddleware->__invoke
+#13 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#14 [internal function]: Slim\DeferredCallable->__invoke
+#15 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#16 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(117): Slim\Route->Slim\{closure}
+#17 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\Route.php(268): Slim\Route->callMiddlewareStack
+#18 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\App.php(503): Slim\Route->run
+#19 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\core\Directus\Application\Http\Middleware\AbstractRateLimitMiddleware.php(34): Slim\App->__invoke
+#20 [internal function]: Directus\Application\Http\Middleware\AbstractRateLimitMiddleware->__invoke
+#21 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#22 [internal function]: Slim\DeferredCallable->__invoke
+#23 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#24 D:\Programs\xampp7.3\htdocs\directus_v8\packages\proxy-detection\src\ProxyDetectionMiddleware.php(30): Slim\App->Slim\{closure}
+#25 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\core\Directus\Application\Http\Middleware\ProxyMiddleware.php(18): RKA\Middleware\ProxyDetectionMiddleware->__invoke
+#26 [internal function]: Directus\Application\Http\Middleware\ProxyMiddleware->__invoke
+#27 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#28 [internal function]: Slim\DeferredCallable->__invoke
+#29 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#30 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\akrabat\ip-address-middleware\src\IpAddress.php(113): Slim\App->Slim\{closure}
+#31 [internal function]: RKA\Middleware\IpAddress->__invoke
+#32 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#33 [internal function]: Slim\DeferredCallable->__invoke
+#34 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#35 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\core\Directus\Application\Http\Middleware\CorsMiddleware.php(71): Slim\App->Slim\{closure}
+#36 [internal function]: Directus\Application\Http\Middleware\CorsMiddleware->__invoke
+#37 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#38 [internal function]: Slim\DeferredCallable->__invoke
+#39 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#40 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\core\Directus\Application\Http\Middleware\ResponseCacheMiddleware.php(63): Slim\App->Slim\{closure}
+#41 [internal function]: Directus\Application\Http\Middleware\ResponseCacheMiddleware->__invoke
+#42 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#43 [internal function]: Slim\DeferredCallable->__invoke
+#44 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#45 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(117): Slim\App->Slim\{closure}
+#46 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\App.php(392): Slim\App->callMiddlewareStack
+#47 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\App.php(297): Slim\App->process
+#48 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\core\Directus\Application\Application.php(161): Slim\App->run
+#49 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\public\index.php(5): Directus\Application\Application->run [] []
+[2021-05-14 09:29:47] api[my-project].ERROR: Directus\Authentication\Exception\InvalidUserCredentialsException: Invalid user credentials in D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\core\Directus\Authentication\Provider.php:173
+Stack trace:
+#0 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\core\Directus\Authentication\Provider.php(129): Directus\Authentication\Provider->findUserWithCredentials
+#1 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\core\Directus\Services\AuthService.php(59): Directus\Authentication\Provider->login
+#2 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\endpoints\Auth.php(67): Directus\Services\AuthService->loginWithCredentials
+#3 [internal function]: Directus\Api\Routes\Auth->authenticate
+#4 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\Handlers\Strategies\RequestResponse.php(40): call_user_func
+#5 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\Route.php(281): Slim\Handlers\Strategies\RequestResponse->__invoke
+#6 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\core\Directus\Application\Http\Middleware\TableGatewayMiddleware.php(25): Slim\Route->__invoke
+#7 [internal function]: Directus\Application\Http\Middleware\TableGatewayMiddleware->__invoke
+#8 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#9 [internal function]: Slim\DeferredCallable->__invoke
+#10 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#11 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\core\Directus\Application\Http\Middleware\DatabaseMigrationMiddleware.php(15): Slim\Route->Slim\{closure}
+#12 [internal function]: Directus\Application\Http\Middleware\DatabaseMigrationMiddleware->__invoke
+#13 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#14 [internal function]: Slim\DeferredCallable->__invoke
+#15 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#16 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(117): Slim\Route->Slim\{closure}
+#17 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\Route.php(268): Slim\Route->callMiddlewareStack
+#18 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\App.php(503): Slim\Route->run
+#19 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\core\Directus\Application\Http\Middleware\AbstractRateLimitMiddleware.php(34): Slim\App->__invoke
+#20 [internal function]: Directus\Application\Http\Middleware\AbstractRateLimitMiddleware->__invoke
+#21 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#22 [internal function]: Slim\DeferredCallable->__invoke
+#23 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#24 D:\Programs\xampp7.3\htdocs\directus_v8\packages\proxy-detection\src\ProxyDetectionMiddleware.php(30): Slim\App->Slim\{closure}
+#25 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\core\Directus\Application\Http\Middleware\ProxyMiddleware.php(18): RKA\Middleware\ProxyDetectionMiddleware->__invoke
+#26 [internal function]: Directus\Application\Http\Middleware\ProxyMiddleware->__invoke
+#27 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#28 [internal function]: Slim\DeferredCallable->__invoke
+#29 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#30 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\akrabat\ip-address-middleware\src\IpAddress.php(113): Slim\App->Slim\{closure}
+#31 [internal function]: RKA\Middleware\IpAddress->__invoke
+#32 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#33 [internal function]: Slim\DeferredCallable->__invoke
+#34 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#35 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\core\Directus\Application\Http\Middleware\CorsMiddleware.php(71): Slim\App->Slim\{closure}
+#36 [internal function]: Directus\Application\Http\Middleware\CorsMiddleware->__invoke
+#37 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#38 [internal function]: Slim\DeferredCallable->__invoke
+#39 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#40 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\core\Directus\Application\Http\Middleware\ResponseCacheMiddleware.php(63): Slim\App->Slim\{closure}
+#41 [internal function]: Directus\Application\Http\Middleware\ResponseCacheMiddleware->__invoke
+#42 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#43 [internal function]: Slim\DeferredCallable->__invoke
+#44 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#45 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(117): Slim\App->Slim\{closure}
+#46 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\App.php(392): Slim\App->callMiddlewareStack
+#47 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\App.php(297): Slim\App->process
+#48 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\core\Directus\Application\Application.php(161): Slim\App->run
+#49 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\public\index.php(5): Directus\Application\Application->run [] []
+[2021-05-14 09:30:14] api[my-project].ERROR: Directus\Authentication\Exception\Missing2FAPasswordException: User missing 2FA OTP in D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\core\Directus\Authentication\Provider.php:190
+Stack trace:
+#0 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\core\Directus\Authentication\Provider.php(129): Directus\Authentication\Provider->findUserWithCredentials
+#1 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\core\Directus\Services\AuthService.php(59): Directus\Authentication\Provider->login
+#2 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\endpoints\Auth.php(67): Directus\Services\AuthService->loginWithCredentials
+#3 [internal function]: Directus\Api\Routes\Auth->authenticate
+#4 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\Handlers\Strategies\RequestResponse.php(40): call_user_func
+#5 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\Route.php(281): Slim\Handlers\Strategies\RequestResponse->__invoke
+#6 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\core\Directus\Application\Http\Middleware\TableGatewayMiddleware.php(25): Slim\Route->__invoke
+#7 [internal function]: Directus\Application\Http\Middleware\TableGatewayMiddleware->__invoke
+#8 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#9 [internal function]: Slim\DeferredCallable->__invoke
+#10 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#11 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\core\Directus\Application\Http\Middleware\DatabaseMigrationMiddleware.php(15): Slim\Route->Slim\{closure}
+#12 [internal function]: Directus\Application\Http\Middleware\DatabaseMigrationMiddleware->__invoke
+#13 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#14 [internal function]: Slim\DeferredCallable->__invoke
+#15 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#16 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(117): Slim\Route->Slim\{closure}
+#17 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\Route.php(268): Slim\Route->callMiddlewareStack
+#18 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\App.php(503): Slim\Route->run
+#19 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\core\Directus\Application\Http\Middleware\AbstractRateLimitMiddleware.php(34): Slim\App->__invoke
+#20 [internal function]: Directus\Application\Http\Middleware\AbstractRateLimitMiddleware->__invoke
+#21 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#22 [internal function]: Slim\DeferredCallable->__invoke
+#23 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#24 D:\Programs\xampp7.3\htdocs\directus_v8\packages\proxy-detection\src\ProxyDetectionMiddleware.php(30): Slim\App->Slim\{closure}
+#25 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\core\Directus\Application\Http\Middleware\ProxyMiddleware.php(18): RKA\Middleware\ProxyDetectionMiddleware->__invoke
+#26 [internal function]: Directus\Application\Http\Middleware\ProxyMiddleware->__invoke
+#27 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#28 [internal function]: Slim\DeferredCallable->__invoke
+#29 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#30 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\akrabat\ip-address-middleware\src\IpAddress.php(113): Slim\App->Slim\{closure}
+#31 [internal function]: RKA\Middleware\IpAddress->__invoke
+#32 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#33 [internal function]: Slim\DeferredCallable->__invoke
+#34 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#35 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\core\Directus\Application\Http\Middleware\CorsMiddleware.php(71): Slim\App->Slim\{closure}
+#36 [internal function]: Directus\Application\Http\Middleware\CorsMiddleware->__invoke
+#37 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#38 [internal function]: Slim\DeferredCallable->__invoke
+#39 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#40 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\core\Directus\Application\Http\Middleware\ResponseCacheMiddleware.php(63): Slim\App->Slim\{closure}
+#41 [internal function]: Directus\Application\Http\Middleware\ResponseCacheMiddleware->__invoke
+#42 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#43 [internal function]: Slim\DeferredCallable->__invoke
+#44 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#45 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(117): Slim\App->Slim\{closure}
+#46 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\App.php(392): Slim\App->callMiddlewareStack
+#47 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\App.php(297): Slim\App->process
+#48 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\core\Directus\Application\Application.php(161): Slim\App->run
+#49 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\public\index.php(5): Directus\Application\Application->run [] []
+[2021-05-14 09:30:57] api[my-project].ERROR: Directus\Exception\UnauthorizedException: Unauthorized request in D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\core\Directus\Services\UsersService.php:152
+Stack trace:
+#0 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\endpoints\Users.php(92): Directus\Services\UsersService->findByIds
+#1 [internal function]: Directus\Api\Routes\Users->read
+#2 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\Handlers\Strategies\RequestResponse.php(40): call_user_func
+#3 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\Route.php(281): Slim\Handlers\Strategies\RequestResponse->__invoke
+#4 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\core\Directus\Application\Http\Middleware\AbstractRateLimitMiddleware.php(34): Slim\Route->__invoke
+#5 [internal function]: Directus\Application\Http\Middleware\AbstractRateLimitMiddleware->__invoke
+#6 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#7 [internal function]: Slim\DeferredCallable->__invoke
+#8 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#9 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\core\Directus\Application\Http\Middleware\AuthenticationMiddleware.php(124): Slim\Route->Slim\{closure}
+#10 [internal function]: Directus\Application\Http\Middleware\AuthenticationMiddleware->__invoke
+#11 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#12 [internal function]: Slim\DeferredCallable->__invoke
+#13 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#14 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\core\Directus\Application\Http\Middleware\TableGatewayMiddleware.php(25): Slim\Route->Slim\{closure}
+#15 [internal function]: Directus\Application\Http\Middleware\TableGatewayMiddleware->__invoke
+#16 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#17 [internal function]: Slim\DeferredCallable->__invoke
+#18 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#19 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\core\Directus\Application\Http\Middleware\DatabaseMigrationMiddleware.php(15): Slim\Route->Slim\{closure}
+#20 [internal function]: Directus\Application\Http\Middleware\DatabaseMigrationMiddleware->__invoke
+#21 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#22 [internal function]: Slim\DeferredCallable->__invoke
+#23 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#24 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(117): Slim\Route->Slim\{closure}
+#25 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\Route.php(268): Slim\Route->callMiddlewareStack
+#26 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\App.php(503): Slim\Route->run
+#27 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\core\Directus\Application\Http\Middleware\AbstractRateLimitMiddleware.php(34): Slim\App->__invoke
+#28 [internal function]: Directus\Application\Http\Middleware\AbstractRateLimitMiddleware->__invoke
+#29 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#30 [internal function]: Slim\DeferredCallable->__invoke
+#31 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#32 D:\Programs\xampp7.3\htdocs\directus_v8\packages\proxy-detection\src\ProxyDetectionMiddleware.php(30): Slim\App->Slim\{closure}
+#33 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\core\Directus\Application\Http\Middleware\ProxyMiddleware.php(18): RKA\Middleware\ProxyDetectionMiddleware->__invoke
+#34 [internal function]: Directus\Application\Http\Middleware\ProxyMiddleware->__invoke
+#35 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#36 [internal function]: Slim\DeferredCallable->__invoke
+#37 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#38 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\akrabat\ip-address-middleware\src\IpAddress.php(113): Slim\App->Slim\{closure}
+#39 [internal function]: RKA\Middleware\IpAddress->__invoke
+#40 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#41 [internal function]: Slim\DeferredCallable->__invoke
+#42 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#43 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\core\Directus\Application\Http\Middleware\CorsMiddleware.php(71): Slim\App->Slim\{closure}
+#44 [internal function]: Directus\Application\Http\Middleware\CorsMiddleware->__invoke
+#45 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#46 [internal function]: Slim\DeferredCallable->__invoke
+#47 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#48 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\core\Directus\Application\Http\Middleware\ResponseCacheMiddleware.php(63): Slim\App->Slim\{closure}
+#49 [internal function]: Directus\Application\Http\Middleware\ResponseCacheMiddleware->__invoke
+#50 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#51 [internal function]: Slim\DeferredCallable->__invoke
+#52 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#53 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(117): Slim\App->Slim\{closure}
+#54 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\App.php(392): Slim\App->callMiddlewareStack
+#55 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\App.php(297): Slim\App->process
+#56 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\core\Directus\Application\Application.php(161): Slim\App->run
+#57 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\public\index.php(5): Directus\Application\Application->run [] []
+[2021-05-14 09:30:58] api[my-project].ERROR: Directus\Exception\UnauthorizedException: Unauthorized request in D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\core\Directus\Services\UsersService.php:152
+Stack trace:
+#0 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\endpoints\Users.php(92): Directus\Services\UsersService->findByIds
+#1 [internal function]: Directus\Api\Routes\Users->read
+#2 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\Handlers\Strategies\RequestResponse.php(40): call_user_func
+#3 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\Route.php(281): Slim\Handlers\Strategies\RequestResponse->__invoke
+#4 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\core\Directus\Application\Http\Middleware\AbstractRateLimitMiddleware.php(34): Slim\Route->__invoke
+#5 [internal function]: Directus\Application\Http\Middleware\AbstractRateLimitMiddleware->__invoke
+#6 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#7 [internal function]: Slim\DeferredCallable->__invoke
+#8 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#9 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\core\Directus\Application\Http\Middleware\AuthenticationMiddleware.php(124): Slim\Route->Slim\{closure}
+#10 [internal function]: Directus\Application\Http\Middleware\AuthenticationMiddleware->__invoke
+#11 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#12 [internal function]: Slim\DeferredCallable->__invoke
+#13 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#14 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\core\Directus\Application\Http\Middleware\TableGatewayMiddleware.php(25): Slim\Route->Slim\{closure}
+#15 [internal function]: Directus\Application\Http\Middleware\TableGatewayMiddleware->__invoke
+#16 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#17 [internal function]: Slim\DeferredCallable->__invoke
+#18 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#19 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\core\Directus\Application\Http\Middleware\DatabaseMigrationMiddleware.php(15): Slim\Route->Slim\{closure}
+#20 [internal function]: Directus\Application\Http\Middleware\DatabaseMigrationMiddleware->__invoke
+#21 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#22 [internal function]: Slim\DeferredCallable->__invoke
+#23 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#24 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(117): Slim\Route->Slim\{closure}
+#25 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\Route.php(268): Slim\Route->callMiddlewareStack
+#26 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\App.php(503): Slim\Route->run
+#27 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\core\Directus\Application\Http\Middleware\AbstractRateLimitMiddleware.php(34): Slim\App->__invoke
+#28 [internal function]: Directus\Application\Http\Middleware\AbstractRateLimitMiddleware->__invoke
+#29 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#30 [internal function]: Slim\DeferredCallable->__invoke
+#31 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#32 D:\Programs\xampp7.3\htdocs\directus_v8\packages\proxy-detection\src\ProxyDetectionMiddleware.php(30): Slim\App->Slim\{closure}
+#33 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\core\Directus\Application\Http\Middleware\ProxyMiddleware.php(18): RKA\Middleware\ProxyDetectionMiddleware->__invoke
+#34 [internal function]: Directus\Application\Http\Middleware\ProxyMiddleware->__invoke
+#35 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#36 [internal function]: Slim\DeferredCallable->__invoke
+#37 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#38 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\akrabat\ip-address-middleware\src\IpAddress.php(113): Slim\App->Slim\{closure}
+#39 [internal function]: RKA\Middleware\IpAddress->__invoke
+#40 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#41 [internal function]: Slim\DeferredCallable->__invoke
+#42 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#43 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\core\Directus\Application\Http\Middleware\CorsMiddleware.php(71): Slim\App->Slim\{closure}
+#44 [internal function]: Directus\Application\Http\Middleware\CorsMiddleware->__invoke
+#45 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#46 [internal function]: Slim\DeferredCallable->__invoke
+#47 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#48 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\core\Directus\Application\Http\Middleware\ResponseCacheMiddleware.php(63): Slim\App->Slim\{closure}
+#49 [internal function]: Directus\Application\Http\Middleware\ResponseCacheMiddleware->__invoke
+#50 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#51 [internal function]: Slim\DeferredCallable->__invoke
+#52 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#53 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(117): Slim\App->Slim\{closure}
+#54 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\App.php(392): Slim\App->callMiddlewareStack
+#55 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\App.php(297): Slim\App->process
+#56 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\core\Directus\Application\Application.php(161): Slim\App->run
+#57 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\public\index.php(5): Directus\Application\Application->run [] []
+[2021-05-14 09:30:59] api[my-project].ERROR: Directus\Exception\UnauthorizedException: Unauthorized request in D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\core\Directus\Services\UsersService.php:152
+Stack trace:
+#0 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\endpoints\Users.php(92): Directus\Services\UsersService->findByIds
+#1 [internal function]: Directus\Api\Routes\Users->read
+#2 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\Handlers\Strategies\RequestResponse.php(40): call_user_func
+#3 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\Route.php(281): Slim\Handlers\Strategies\RequestResponse->__invoke
+#4 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\core\Directus\Application\Http\Middleware\AbstractRateLimitMiddleware.php(34): Slim\Route->__invoke
+#5 [internal function]: Directus\Application\Http\Middleware\AbstractRateLimitMiddleware->__invoke
+#6 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#7 [internal function]: Slim\DeferredCallable->__invoke
+#8 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#9 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\core\Directus\Application\Http\Middleware\AuthenticationMiddleware.php(124): Slim\Route->Slim\{closure}
+#10 [internal function]: Directus\Application\Http\Middleware\AuthenticationMiddleware->__invoke
+#11 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#12 [internal function]: Slim\DeferredCallable->__invoke
+#13 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#14 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\core\Directus\Application\Http\Middleware\TableGatewayMiddleware.php(25): Slim\Route->Slim\{closure}
+#15 [internal function]: Directus\Application\Http\Middleware\TableGatewayMiddleware->__invoke
+#16 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#17 [internal function]: Slim\DeferredCallable->__invoke
+#18 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#19 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\core\Directus\Application\Http\Middleware\DatabaseMigrationMiddleware.php(15): Slim\Route->Slim\{closure}
+#20 [internal function]: Directus\Application\Http\Middleware\DatabaseMigrationMiddleware->__invoke
+#21 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#22 [internal function]: Slim\DeferredCallable->__invoke
+#23 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#24 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(117): Slim\Route->Slim\{closure}
+#25 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\Route.php(268): Slim\Route->callMiddlewareStack
+#26 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\App.php(503): Slim\Route->run
+#27 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\core\Directus\Application\Http\Middleware\AbstractRateLimitMiddleware.php(34): Slim\App->__invoke
+#28 [internal function]: Directus\Application\Http\Middleware\AbstractRateLimitMiddleware->__invoke
+#29 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#30 [internal function]: Slim\DeferredCallable->__invoke
+#31 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#32 D:\Programs\xampp7.3\htdocs\directus_v8\packages\proxy-detection\src\ProxyDetectionMiddleware.php(30): Slim\App->Slim\{closure}
+#33 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\core\Directus\Application\Http\Middleware\ProxyMiddleware.php(18): RKA\Middleware\ProxyDetectionMiddleware->__invoke
+#34 [internal function]: Directus\Application\Http\Middleware\ProxyMiddleware->__invoke
+#35 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#36 [internal function]: Slim\DeferredCallable->__invoke
+#37 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#38 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\akrabat\ip-address-middleware\src\IpAddress.php(113): Slim\App->Slim\{closure}
+#39 [internal function]: RKA\Middleware\IpAddress->__invoke
+#40 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#41 [internal function]: Slim\DeferredCallable->__invoke
+#42 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#43 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\core\Directus\Application\Http\Middleware\CorsMiddleware.php(71): Slim\App->Slim\{closure}
+#44 [internal function]: Directus\Application\Http\Middleware\CorsMiddleware->__invoke
+#45 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#46 [internal function]: Slim\DeferredCallable->__invoke
+#47 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#48 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\core\Directus\Application\Http\Middleware\ResponseCacheMiddleware.php(63): Slim\App->Slim\{closure}
+#49 [internal function]: Directus\Application\Http\Middleware\ResponseCacheMiddleware->__invoke
+#50 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#51 [internal function]: Slim\DeferredCallable->__invoke
+#52 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#53 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(117): Slim\App->Slim\{closure}
+#54 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\App.php(392): Slim\App->callMiddlewareStack
+#55 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\App.php(297): Slim\App->process
+#56 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\core\Directus\Application\Application.php(161): Slim\App->run
+#57 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\public\index.php(5): Directus\Application\Application->run [] []
+[2021-05-14 09:31:05] api[my-project].ERROR: Directus\Exception\UnauthorizedException: Unauthorized request in D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\core\Directus\Services\UsersService.php:152
+Stack trace:
+#0 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\endpoints\Users.php(92): Directus\Services\UsersService->findByIds
+#1 [internal function]: Directus\Api\Routes\Users->read
+#2 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\Handlers\Strategies\RequestResponse.php(40): call_user_func
+#3 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\Route.php(281): Slim\Handlers\Strategies\RequestResponse->__invoke
+#4 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\core\Directus\Application\Http\Middleware\AbstractRateLimitMiddleware.php(34): Slim\Route->__invoke
+#5 [internal function]: Directus\Application\Http\Middleware\AbstractRateLimitMiddleware->__invoke
+#6 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#7 [internal function]: Slim\DeferredCallable->__invoke
+#8 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#9 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\core\Directus\Application\Http\Middleware\AuthenticationMiddleware.php(124): Slim\Route->Slim\{closure}
+#10 [internal function]: Directus\Application\Http\Middleware\AuthenticationMiddleware->__invoke
+#11 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#12 [internal function]: Slim\DeferredCallable->__invoke
+#13 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#14 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\core\Directus\Application\Http\Middleware\TableGatewayMiddleware.php(25): Slim\Route->Slim\{closure}
+#15 [internal function]: Directus\Application\Http\Middleware\TableGatewayMiddleware->__invoke
+#16 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#17 [internal function]: Slim\DeferredCallable->__invoke
+#18 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#19 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\core\Directus\Application\Http\Middleware\DatabaseMigrationMiddleware.php(15): Slim\Route->Slim\{closure}
+#20 [internal function]: Directus\Application\Http\Middleware\DatabaseMigrationMiddleware->__invoke
+#21 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#22 [internal function]: Slim\DeferredCallable->__invoke
+#23 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#24 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(117): Slim\Route->Slim\{closure}
+#25 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\Route.php(268): Slim\Route->callMiddlewareStack
+#26 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\App.php(503): Slim\Route->run
+#27 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\core\Directus\Application\Http\Middleware\AbstractRateLimitMiddleware.php(34): Slim\App->__invoke
+#28 [internal function]: Directus\Application\Http\Middleware\AbstractRateLimitMiddleware->__invoke
+#29 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#30 [internal function]: Slim\DeferredCallable->__invoke
+#31 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#32 D:\Programs\xampp7.3\htdocs\directus_v8\packages\proxy-detection\src\ProxyDetectionMiddleware.php(30): Slim\App->Slim\{closure}
+#33 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\core\Directus\Application\Http\Middleware\ProxyMiddleware.php(18): RKA\Middleware\ProxyDetectionMiddleware->__invoke
+#34 [internal function]: Directus\Application\Http\Middleware\ProxyMiddleware->__invoke
+#35 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#36 [internal function]: Slim\DeferredCallable->__invoke
+#37 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#38 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\akrabat\ip-address-middleware\src\IpAddress.php(113): Slim\App->Slim\{closure}
+#39 [internal function]: RKA\Middleware\IpAddress->__invoke
+#40 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#41 [internal function]: Slim\DeferredCallable->__invoke
+#42 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#43 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\core\Directus\Application\Http\Middleware\CorsMiddleware.php(71): Slim\App->Slim\{closure}
+#44 [internal function]: Directus\Application\Http\Middleware\CorsMiddleware->__invoke
+#45 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#46 [internal function]: Slim\DeferredCallable->__invoke
+#47 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#48 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\core\Directus\Application\Http\Middleware\ResponseCacheMiddleware.php(63): Slim\App->Slim\{closure}
+#49 [internal function]: Directus\Application\Http\Middleware\ResponseCacheMiddleware->__invoke
+#50 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#51 [internal function]: Slim\DeferredCallable->__invoke
+#52 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#53 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(117): Slim\App->Slim\{closure}
+#54 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\App.php(392): Slim\App->callMiddlewareStack
+#55 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\App.php(297): Slim\App->process
+#56 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\core\Directus\Application\Application.php(161): Slim\App->run
+#57 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\public\index.php(5): Directus\Application\Application->run [] []
+[2021-05-14 09:31:09] api[my-project].ERROR: Directus\Exception\UnauthorizedException: Unauthorized request in D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\core\Directus\Services\UsersService.php:152
+Stack trace:
+#0 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\endpoints\Users.php(92): Directus\Services\UsersService->findByIds
+#1 [internal function]: Directus\Api\Routes\Users->read
+#2 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\Handlers\Strategies\RequestResponse.php(40): call_user_func
+#3 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\Route.php(281): Slim\Handlers\Strategies\RequestResponse->__invoke
+#4 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\core\Directus\Application\Http\Middleware\AbstractRateLimitMiddleware.php(34): Slim\Route->__invoke
+#5 [internal function]: Directus\Application\Http\Middleware\AbstractRateLimitMiddleware->__invoke
+#6 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#7 [internal function]: Slim\DeferredCallable->__invoke
+#8 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#9 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\core\Directus\Application\Http\Middleware\AuthenticationMiddleware.php(124): Slim\Route->Slim\{closure}
+#10 [internal function]: Directus\Application\Http\Middleware\AuthenticationMiddleware->__invoke
+#11 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#12 [internal function]: Slim\DeferredCallable->__invoke
+#13 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#14 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\core\Directus\Application\Http\Middleware\TableGatewayMiddleware.php(25): Slim\Route->Slim\{closure}
+#15 [internal function]: Directus\Application\Http\Middleware\TableGatewayMiddleware->__invoke
+#16 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#17 [internal function]: Slim\DeferredCallable->__invoke
+#18 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#19 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\core\Directus\Application\Http\Middleware\DatabaseMigrationMiddleware.php(15): Slim\Route->Slim\{closure}
+#20 [internal function]: Directus\Application\Http\Middleware\DatabaseMigrationMiddleware->__invoke
+#21 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#22 [internal function]: Slim\DeferredCallable->__invoke
+#23 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#24 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(117): Slim\Route->Slim\{closure}
+#25 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\Route.php(268): Slim\Route->callMiddlewareStack
+#26 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\App.php(503): Slim\Route->run
+#27 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\core\Directus\Application\Http\Middleware\AbstractRateLimitMiddleware.php(34): Slim\App->__invoke
+#28 [internal function]: Directus\Application\Http\Middleware\AbstractRateLimitMiddleware->__invoke
+#29 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#30 [internal function]: Slim\DeferredCallable->__invoke
+#31 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#32 D:\Programs\xampp7.3\htdocs\directus_v8\packages\proxy-detection\src\ProxyDetectionMiddleware.php(30): Slim\App->Slim\{closure}
+#33 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\core\Directus\Application\Http\Middleware\ProxyMiddleware.php(18): RKA\Middleware\ProxyDetectionMiddleware->__invoke
+#34 [internal function]: Directus\Application\Http\Middleware\ProxyMiddleware->__invoke
+#35 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#36 [internal function]: Slim\DeferredCallable->__invoke
+#37 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#38 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\akrabat\ip-address-middleware\src\IpAddress.php(113): Slim\App->Slim\{closure}
+#39 [internal function]: RKA\Middleware\IpAddress->__invoke
+#40 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#41 [internal function]: Slim\DeferredCallable->__invoke
+#42 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#43 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\core\Directus\Application\Http\Middleware\CorsMiddleware.php(71): Slim\App->Slim\{closure}
+#44 [internal function]: Directus\Application\Http\Middleware\CorsMiddleware->__invoke
+#45 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#46 [internal function]: Slim\DeferredCallable->__invoke
+#47 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#48 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\core\Directus\Application\Http\Middleware\ResponseCacheMiddleware.php(63): Slim\App->Slim\{closure}
+#49 [internal function]: Directus\Application\Http\Middleware\ResponseCacheMiddleware->__invoke
+#50 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#51 [internal function]: Slim\DeferredCallable->__invoke
+#52 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#53 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(117): Slim\App->Slim\{closure}
+#54 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\App.php(392): Slim\App->callMiddlewareStack
+#55 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\App.php(297): Slim\App->process
+#56 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\core\Directus\Application\Application.php(161): Slim\App->run
+#57 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\public\index.php(5): Directus\Application\Application->run [] []
+[2021-05-14 09:31:32] api[my-project].ERROR: Directus\Exception\UnauthorizedException: Unauthorized request in D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\core\Directus\Services\UsersService.php:152
+Stack trace:
+#0 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\endpoints\Users.php(92): Directus\Services\UsersService->findByIds
+#1 [internal function]: Directus\Api\Routes\Users->read
+#2 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\Handlers\Strategies\RequestResponse.php(40): call_user_func
+#3 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\Route.php(281): Slim\Handlers\Strategies\RequestResponse->__invoke
+#4 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\core\Directus\Application\Http\Middleware\AbstractRateLimitMiddleware.php(34): Slim\Route->__invoke
+#5 [internal function]: Directus\Application\Http\Middleware\AbstractRateLimitMiddleware->__invoke
+#6 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#7 [internal function]: Slim\DeferredCallable->__invoke
+#8 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#9 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\core\Directus\Application\Http\Middleware\AuthenticationMiddleware.php(124): Slim\Route->Slim\{closure}
+#10 [internal function]: Directus\Application\Http\Middleware\AuthenticationMiddleware->__invoke
+#11 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#12 [internal function]: Slim\DeferredCallable->__invoke
+#13 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#14 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\core\Directus\Application\Http\Middleware\TableGatewayMiddleware.php(25): Slim\Route->Slim\{closure}
+#15 [internal function]: Directus\Application\Http\Middleware\TableGatewayMiddleware->__invoke
+#16 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#17 [internal function]: Slim\DeferredCallable->__invoke
+#18 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#19 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\core\Directus\Application\Http\Middleware\DatabaseMigrationMiddleware.php(15): Slim\Route->Slim\{closure}
+#20 [internal function]: Directus\Application\Http\Middleware\DatabaseMigrationMiddleware->__invoke
+#21 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#22 [internal function]: Slim\DeferredCallable->__invoke
+#23 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#24 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(117): Slim\Route->Slim\{closure}
+#25 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\Route.php(268): Slim\Route->callMiddlewareStack
+#26 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\App.php(503): Slim\Route->run
+#27 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\core\Directus\Application\Http\Middleware\AbstractRateLimitMiddleware.php(34): Slim\App->__invoke
+#28 [internal function]: Directus\Application\Http\Middleware\AbstractRateLimitMiddleware->__invoke
+#29 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#30 [internal function]: Slim\DeferredCallable->__invoke
+#31 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#32 D:\Programs\xampp7.3\htdocs\directus_v8\packages\proxy-detection\src\ProxyDetectionMiddleware.php(30): Slim\App->Slim\{closure}
+#33 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\core\Directus\Application\Http\Middleware\ProxyMiddleware.php(18): RKA\Middleware\ProxyDetectionMiddleware->__invoke
+#34 [internal function]: Directus\Application\Http\Middleware\ProxyMiddleware->__invoke
+#35 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#36 [internal function]: Slim\DeferredCallable->__invoke
+#37 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#38 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\akrabat\ip-address-middleware\src\IpAddress.php(113): Slim\App->Slim\{closure}
+#39 [internal function]: RKA\Middleware\IpAddress->__invoke
+#40 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#41 [internal function]: Slim\DeferredCallable->__invoke
+#42 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#43 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\core\Directus\Application\Http\Middleware\CorsMiddleware.php(71): Slim\App->Slim\{closure}
+#44 [internal function]: Directus\Application\Http\Middleware\CorsMiddleware->__invoke
+#45 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#46 [internal function]: Slim\DeferredCallable->__invoke
+#47 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#48 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\core\Directus\Application\Http\Middleware\ResponseCacheMiddleware.php(63): Slim\App->Slim\{closure}
+#49 [internal function]: Directus\Application\Http\Middleware\ResponseCacheMiddleware->__invoke
+#50 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#51 [internal function]: Slim\DeferredCallable->__invoke
+#52 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#53 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(117): Slim\App->Slim\{closure}
+#54 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\App.php(392): Slim\App->callMiddlewareStack
+#55 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\App.php(297): Slim\App->process
+#56 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\core\Directus\Application\Application.php(161): Slim\App->run
+#57 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\public\index.php(5): Directus\Application\Application->run [] []
+[2021-05-14 09:31:41] api[my-project].ERROR: Directus\Exception\UnauthorizedException: Unauthorized request in D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\core\Directus\Services\UsersService.php:152
+Stack trace:
+#0 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\endpoints\Users.php(92): Directus\Services\UsersService->findByIds
+#1 [internal function]: Directus\Api\Routes\Users->read
+#2 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\Handlers\Strategies\RequestResponse.php(40): call_user_func
+#3 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\Route.php(281): Slim\Handlers\Strategies\RequestResponse->__invoke
+#4 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\core\Directus\Application\Http\Middleware\AbstractRateLimitMiddleware.php(34): Slim\Route->__invoke
+#5 [internal function]: Directus\Application\Http\Middleware\AbstractRateLimitMiddleware->__invoke
+#6 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#7 [internal function]: Slim\DeferredCallable->__invoke
+#8 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#9 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\core\Directus\Application\Http\Middleware\AuthenticationMiddleware.php(124): Slim\Route->Slim\{closure}
+#10 [internal function]: Directus\Application\Http\Middleware\AuthenticationMiddleware->__invoke
+#11 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#12 [internal function]: Slim\DeferredCallable->__invoke
+#13 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#14 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\core\Directus\Application\Http\Middleware\TableGatewayMiddleware.php(25): Slim\Route->Slim\{closure}
+#15 [internal function]: Directus\Application\Http\Middleware\TableGatewayMiddleware->__invoke
+#16 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#17 [internal function]: Slim\DeferredCallable->__invoke
+#18 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#19 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\core\Directus\Application\Http\Middleware\DatabaseMigrationMiddleware.php(15): Slim\Route->Slim\{closure}
+#20 [internal function]: Directus\Application\Http\Middleware\DatabaseMigrationMiddleware->__invoke
+#21 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#22 [internal function]: Slim\DeferredCallable->__invoke
+#23 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#24 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(117): Slim\Route->Slim\{closure}
+#25 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\Route.php(268): Slim\Route->callMiddlewareStack
+#26 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\App.php(503): Slim\Route->run
+#27 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\core\Directus\Application\Http\Middleware\AbstractRateLimitMiddleware.php(34): Slim\App->__invoke
+#28 [internal function]: Directus\Application\Http\Middleware\AbstractRateLimitMiddleware->__invoke
+#29 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#30 [internal function]: Slim\DeferredCallable->__invoke
+#31 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#32 D:\Programs\xampp7.3\htdocs\directus_v8\packages\proxy-detection\src\ProxyDetectionMiddleware.php(30): Slim\App->Slim\{closure}
+#33 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\core\Directus\Application\Http\Middleware\ProxyMiddleware.php(18): RKA\Middleware\ProxyDetectionMiddleware->__invoke
+#34 [internal function]: Directus\Application\Http\Middleware\ProxyMiddleware->__invoke
+#35 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#36 [internal function]: Slim\DeferredCallable->__invoke
+#37 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#38 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\akrabat\ip-address-middleware\src\IpAddress.php(113): Slim\App->Slim\{closure}
+#39 [internal function]: RKA\Middleware\IpAddress->__invoke
+#40 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#41 [internal function]: Slim\DeferredCallable->__invoke
+#42 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#43 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\core\Directus\Application\Http\Middleware\CorsMiddleware.php(71): Slim\App->Slim\{closure}
+#44 [internal function]: Directus\Application\Http\Middleware\CorsMiddleware->__invoke
+#45 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#46 [internal function]: Slim\DeferredCallable->__invoke
+#47 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#48 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\core\Directus\Application\Http\Middleware\ResponseCacheMiddleware.php(63): Slim\App->Slim\{closure}
+#49 [internal function]: Directus\Application\Http\Middleware\ResponseCacheMiddleware->__invoke
+#50 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#51 [internal function]: Slim\DeferredCallable->__invoke
+#52 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#53 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(117): Slim\App->Slim\{closure}
+#54 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\App.php(392): Slim\App->callMiddlewareStack
+#55 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\App.php(297): Slim\App->process
+#56 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\core\Directus\Application\Application.php(161): Slim\App->run
+#57 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\public\index.php(5): Directus\Application\Application->run [] []
+[2021-05-14 09:31:41] api[my-project].ERROR: Directus\Exception\UnauthorizedException: Unauthorized request in D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\core\Directus\Services\UsersService.php:152
+Stack trace:
+#0 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\endpoints\Users.php(92): Directus\Services\UsersService->findByIds
+#1 [internal function]: Directus\Api\Routes\Users->read
+#2 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\Handlers\Strategies\RequestResponse.php(40): call_user_func
+#3 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\Route.php(281): Slim\Handlers\Strategies\RequestResponse->__invoke
+#4 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\core\Directus\Application\Http\Middleware\AbstractRateLimitMiddleware.php(34): Slim\Route->__invoke
+#5 [internal function]: Directus\Application\Http\Middleware\AbstractRateLimitMiddleware->__invoke
+#6 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#7 [internal function]: Slim\DeferredCallable->__invoke
+#8 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#9 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\core\Directus\Application\Http\Middleware\AuthenticationMiddleware.php(124): Slim\Route->Slim\{closure}
+#10 [internal function]: Directus\Application\Http\Middleware\AuthenticationMiddleware->__invoke
+#11 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#12 [internal function]: Slim\DeferredCallable->__invoke
+#13 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#14 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\core\Directus\Application\Http\Middleware\TableGatewayMiddleware.php(25): Slim\Route->Slim\{closure}
+#15 [internal function]: Directus\Application\Http\Middleware\TableGatewayMiddleware->__invoke
+#16 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#17 [internal function]: Slim\DeferredCallable->__invoke
+#18 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#19 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\core\Directus\Application\Http\Middleware\DatabaseMigrationMiddleware.php(15): Slim\Route->Slim\{closure}
+#20 [internal function]: Directus\Application\Http\Middleware\DatabaseMigrationMiddleware->__invoke
+#21 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#22 [internal function]: Slim\DeferredCallable->__invoke
+#23 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#24 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(117): Slim\Route->Slim\{closure}
+#25 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\Route.php(268): Slim\Route->callMiddlewareStack
+#26 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\App.php(503): Slim\Route->run
+#27 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\core\Directus\Application\Http\Middleware\AbstractRateLimitMiddleware.php(34): Slim\App->__invoke
+#28 [internal function]: Directus\Application\Http\Middleware\AbstractRateLimitMiddleware->__invoke
+#29 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#30 [internal function]: Slim\DeferredCallable->__invoke
+#31 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#32 D:\Programs\xampp7.3\htdocs\directus_v8\packages\proxy-detection\src\ProxyDetectionMiddleware.php(30): Slim\App->Slim\{closure}
+#33 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\core\Directus\Application\Http\Middleware\ProxyMiddleware.php(18): RKA\Middleware\ProxyDetectionMiddleware->__invoke
+#34 [internal function]: Directus\Application\Http\Middleware\ProxyMiddleware->__invoke
+#35 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#36 [internal function]: Slim\DeferredCallable->__invoke
+#37 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#38 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\akrabat\ip-address-middleware\src\IpAddress.php(113): Slim\App->Slim\{closure}
+#39 [internal function]: RKA\Middleware\IpAddress->__invoke
+#40 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#41 [internal function]: Slim\DeferredCallable->__invoke
+#42 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#43 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\core\Directus\Application\Http\Middleware\CorsMiddleware.php(71): Slim\App->Slim\{closure}
+#44 [internal function]: Directus\Application\Http\Middleware\CorsMiddleware->__invoke
+#45 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#46 [internal function]: Slim\DeferredCallable->__invoke
+#47 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#48 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\core\Directus\Application\Http\Middleware\ResponseCacheMiddleware.php(63): Slim\App->Slim\{closure}
+#49 [internal function]: Directus\Application\Http\Middleware\ResponseCacheMiddleware->__invoke
+#50 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#51 [internal function]: Slim\DeferredCallable->__invoke
+#52 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#53 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(117): Slim\App->Slim\{closure}
+#54 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\App.php(392): Slim\App->callMiddlewareStack
+#55 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\App.php(297): Slim\App->process
+#56 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\core\Directus\Application\Application.php(161): Slim\App->run
+#57 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\public\index.php(5): Directus\Application\Application->run [] []

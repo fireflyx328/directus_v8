@@ -1,0 +1,624 @@
+[2021-05-07 13:45:28] api[].ERROR: Directus\Exception\NotInstalledException: This Directus instance has not been configured. Install via the Directus App (eg: /admin) or read more about configuration at: https://docs.directus.io/getting-started/installation.html#configure in D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\endpoints\Server.php:46
+Stack trace:
+#0 [internal function]: Directus\Api\Routes\Server->projects
+#1 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\Handlers\Strategies\RequestResponse.php(40): call_user_func
+#2 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\Route.php(281): Slim\Handlers\Strategies\RequestResponse->__invoke
+#3 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(117): Slim\Route->__invoke
+#4 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\Route.php(268): Slim\Route->callMiddlewareStack
+#5 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\App.php(503): Slim\Route->run
+#6 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\core\Directus\Application\Http\Middleware\CorsMiddleware.php(71): Slim\App->__invoke
+#7 [internal function]: Directus\Application\Http\Middleware\CorsMiddleware->__invoke
+#8 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#9 [internal function]: Slim\DeferredCallable->__invoke
+#10 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#11 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(117): Slim\App->Slim\{closure}
+#12 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\App.php(392): Slim\App->callMiddlewareStack
+#13 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\App.php(297): Slim\App->process
+#14 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\core\Directus\Application\Application.php(161): Slim\App->run
+#15 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\public\index.php(5): Directus\Application\Application->run [] []
+[2021-05-07 13:47:15] api[].ERROR: Directus\Exception\InvalidDatabaseConnectionException: Invalid database connection in D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\core\Directus\Services\ProjectService.php:107
+Stack trace:
+#0 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\endpoints\ProjectsCreate.php(17): Directus\Services\ProjectService->create
+#1 [internal function]: Directus\Api\Routes\ProjectsCreate->__invoke
+#2 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\Handlers\Strategies\RequestResponse.php(40): call_user_func
+#3 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\Route.php(281): Slim\Handlers\Strategies\RequestResponse->__invoke
+#4 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(117): Slim\Route->__invoke
+#5 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\Route.php(268): Slim\Route->callMiddlewareStack
+#6 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\App.php(503): Slim\Route->run
+#7 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\core\Directus\Application\Http\Middleware\CorsMiddleware.php(71): Slim\App->__invoke
+#8 [internal function]: Directus\Application\Http\Middleware\CorsMiddleware->__invoke
+#9 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#10 [internal function]: Slim\DeferredCallable->__invoke
+#11 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#12 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(117): Slim\App->Slim\{closure}
+#13 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\App.php(392): Slim\App->callMiddlewareStack
+#14 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\App.php(297): Slim\App->process
+#15 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\core\Directus\Application\Application.php(161): Slim\App->run
+#16 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\public\index.php(5): Directus\Application\Application->run [] []
+[2021-05-07 13:47:28] api[].ERROR: Directus\Exception\InvalidDatabaseConnectionException: Invalid database connection in D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\core\Directus\Services\ProjectService.php:107
+Stack trace:
+#0 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\endpoints\ProjectsCreate.php(17): Directus\Services\ProjectService->create
+#1 [internal function]: Directus\Api\Routes\ProjectsCreate->__invoke
+#2 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\Handlers\Strategies\RequestResponse.php(40): call_user_func
+#3 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\Route.php(281): Slim\Handlers\Strategies\RequestResponse->__invoke
+#4 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(117): Slim\Route->__invoke
+#5 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\Route.php(268): Slim\Route->callMiddlewareStack
+#6 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\App.php(503): Slim\Route->run
+#7 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\core\Directus\Application\Http\Middleware\CorsMiddleware.php(71): Slim\App->__invoke
+#8 [internal function]: Directus\Application\Http\Middleware\CorsMiddleware->__invoke
+#9 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#10 [internal function]: Slim\DeferredCallable->__invoke
+#11 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#12 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(117): Slim\App->Slim\{closure}
+#13 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\App.php(392): Slim\App->callMiddlewareStack
+#14 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\App.php(297): Slim\App->process
+#15 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\core\Directus\Application\Application.php(161): Slim\App->run
+#16 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\public\index.php(5): Directus\Application\Application->run [] []
+[2021-05-07 13:47:30] api[].ERROR: Directus\Exception\InvalidDatabaseConnectionException: Invalid database connection in D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\core\Directus\Services\ProjectService.php:107
+Stack trace:
+#0 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\endpoints\ProjectsCreate.php(17): Directus\Services\ProjectService->create
+#1 [internal function]: Directus\Api\Routes\ProjectsCreate->__invoke
+#2 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\Handlers\Strategies\RequestResponse.php(40): call_user_func
+#3 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\Route.php(281): Slim\Handlers\Strategies\RequestResponse->__invoke
+#4 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(117): Slim\Route->__invoke
+#5 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\Route.php(268): Slim\Route->callMiddlewareStack
+#6 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\App.php(503): Slim\Route->run
+#7 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\core\Directus\Application\Http\Middleware\CorsMiddleware.php(71): Slim\App->__invoke
+#8 [internal function]: Directus\Application\Http\Middleware\CorsMiddleware->__invoke
+#9 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#10 [internal function]: Slim\DeferredCallable->__invoke
+#11 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#12 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(117): Slim\App->Slim\{closure}
+#13 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\App.php(392): Slim\App->callMiddlewareStack
+#14 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\App.php(297): Slim\App->process
+#15 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\core\Directus\Application\Application.php(161): Slim\App->run
+#16 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\public\index.php(5): Directus\Application\Application->run [] []
+[2021-05-07 13:47:49] api[].ERROR: Directus\Exception\InvalidDatabaseConnectionException: Invalid database connection in D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\core\Directus\Services\ProjectService.php:107
+Stack trace:
+#0 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\endpoints\ProjectsCreate.php(17): Directus\Services\ProjectService->create
+#1 [internal function]: Directus\Api\Routes\ProjectsCreate->__invoke
+#2 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\Handlers\Strategies\RequestResponse.php(40): call_user_func
+#3 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\Route.php(281): Slim\Handlers\Strategies\RequestResponse->__invoke
+#4 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(117): Slim\Route->__invoke
+#5 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\Route.php(268): Slim\Route->callMiddlewareStack
+#6 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\App.php(503): Slim\Route->run
+#7 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\core\Directus\Application\Http\Middleware\CorsMiddleware.php(71): Slim\App->__invoke
+#8 [internal function]: Directus\Application\Http\Middleware\CorsMiddleware->__invoke
+#9 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#10 [internal function]: Slim\DeferredCallable->__invoke
+#11 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#12 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(117): Slim\App->Slim\{closure}
+#13 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\App.php(392): Slim\App->callMiddlewareStack
+#14 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\App.php(297): Slim\App->process
+#15 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\core\Directus\Application\Application.php(161): Slim\App->run
+#16 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\public\index.php(5): Directus\Application\Application->run [] []
+[2021-05-07 13:48:16] api[].ERROR: PDOException: SQLSTATE[42000]: Syntax error or access violation: 1071 Specified key was too long; max key length is 767 bytes in D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\PdoAdapter.php:134
+Stack trace:
+#0 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\PdoAdapter.php(134): PDO->exec
+#1 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\MysqlAdapter.php(294): Phinx\Db\Adapter\PdoAdapter->execute
+#2 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\AdapterWrapper.php(351): Phinx\Db\Adapter\MysqlAdapter->createTable
+#3 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\TimedOutputAdapter.php(138): Phinx\Db\Adapter\AdapterWrapper->createTable
+#4 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\robmorgan\phinx\src\Phinx\Db\Table.php(628): Phinx\Db\Adapter\TimedOutputAdapter->createTable
+#5 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\migrations\install\20180220023152_create_collections_presets_table.php(63): Phinx\Db\Table->create
+#6 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\robmorgan\phinx\src\Phinx\Migration\Manager\Environment.php(124): CreateCollectionsPresetsTable->change
+#7 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\robmorgan\phinx\src\Phinx\Migration\Manager.php(375): Phinx\Migration\Manager\Environment->executeMigration
+#8 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\robmorgan\phinx\src\Phinx\Migration\Manager.php(351): Phinx\Migration\Manager->executeMigration
+#9 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\core\Directus\Util\Installation\InstallerUtils.php(235): Phinx\Migration\Manager->migrate
+#10 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\core\Directus\Util\Installation\InstallerUtils.php(202): Directus\Util\Installation\InstallerUtils::runMigrationAndSeeder
+#11 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\core\Directus\Services\ProjectService.php(114): Directus\Util\Installation\InstallerUtils::createTables
+#12 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\endpoints\ProjectsCreate.php(17): Directus\Services\ProjectService->create
+#13 [internal function]: Directus\Api\Routes\ProjectsCreate->__invoke
+#14 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\Handlers\Strategies\RequestResponse.php(40): call_user_func
+#15 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\Route.php(281): Slim\Handlers\Strategies\RequestResponse->__invoke
+#16 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(117): Slim\Route->__invoke
+#17 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\Route.php(268): Slim\Route->callMiddlewareStack
+#18 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\App.php(503): Slim\Route->run
+#19 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\core\Directus\Application\Http\Middleware\CorsMiddleware.php(71): Slim\App->__invoke
+#20 [internal function]: Directus\Application\Http\Middleware\CorsMiddleware->__invoke
+#21 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#22 [internal function]: Slim\DeferredCallable->__invoke
+#23 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#24 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(117): Slim\App->Slim\{closure}
+#25 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\App.php(392): Slim\App->callMiddlewareStack
+#26 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\App.php(297): Slim\App->process
+#27 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\core\Directus\Application\Application.php(161): Slim\App->run
+#28 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\public\index.php(5): Directus\Application\Application->run [] []
+[2021-05-07 16:43:21] api[].ERROR: PDOException: SQLSTATE[42000]: Syntax error or access violation: 1071 Specified key was too long; max key length is 767 bytes in D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\PdoAdapter.php:134
+Stack trace:
+#0 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\PdoAdapter.php(134): PDO->exec
+#1 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\MysqlAdapter.php(294): Phinx\Db\Adapter\PdoAdapter->execute
+#2 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\AdapterWrapper.php(351): Phinx\Db\Adapter\MysqlAdapter->createTable
+#3 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\TimedOutputAdapter.php(138): Phinx\Db\Adapter\AdapterWrapper->createTable
+#4 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\robmorgan\phinx\src\Phinx\Db\Table.php(628): Phinx\Db\Adapter\TimedOutputAdapter->createTable
+#5 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\migrations\install\20180220023152_create_collections_presets_table.php(63): Phinx\Db\Table->create
+#6 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\robmorgan\phinx\src\Phinx\Migration\Manager\Environment.php(124): CreateCollectionsPresetsTable->change
+#7 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\robmorgan\phinx\src\Phinx\Migration\Manager.php(375): Phinx\Migration\Manager\Environment->executeMigration
+#8 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\robmorgan\phinx\src\Phinx\Migration\Manager.php(351): Phinx\Migration\Manager->executeMigration
+#9 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\core\Directus\Util\Installation\InstallerUtils.php(235): Phinx\Migration\Manager->migrate
+#10 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\core\Directus\Util\Installation\InstallerUtils.php(202): Directus\Util\Installation\InstallerUtils::runMigrationAndSeeder
+#11 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\core\Directus\Services\ProjectService.php(114): Directus\Util\Installation\InstallerUtils::createTables
+#12 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\endpoints\ProjectsCreate.php(17): Directus\Services\ProjectService->create
+#13 [internal function]: Directus\Api\Routes\ProjectsCreate->__invoke
+#14 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\Handlers\Strategies\RequestResponse.php(40): call_user_func
+#15 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\Route.php(281): Slim\Handlers\Strategies\RequestResponse->__invoke
+#16 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(117): Slim\Route->__invoke
+#17 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\Route.php(268): Slim\Route->callMiddlewareStack
+#18 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\App.php(503): Slim\Route->run
+#19 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\core\Directus\Application\Http\Middleware\CorsMiddleware.php(71): Slim\App->__invoke
+#20 [internal function]: Directus\Application\Http\Middleware\CorsMiddleware->__invoke
+#21 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#22 [internal function]: Slim\DeferredCallable->__invoke
+#23 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#24 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(117): Slim\App->Slim\{closure}
+#25 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\App.php(392): Slim\App->callMiddlewareStack
+#26 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\App.php(297): Slim\App->process
+#27 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\core\Directus\Application\Application.php(161): Slim\App->run
+#28 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\public\index.php(5): Directus\Application\Application->run [] []
+[2021-05-07 16:45:06] api[].ERROR: PDOException: SQLSTATE[42000]: Syntax error or access violation: 1071 Specified key was too long; max key length is 767 bytes in D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\PdoAdapter.php:134
+Stack trace:
+#0 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\PdoAdapter.php(134): PDO->exec
+#1 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\MysqlAdapter.php(294): Phinx\Db\Adapter\PdoAdapter->execute
+#2 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\AdapterWrapper.php(351): Phinx\Db\Adapter\MysqlAdapter->createTable
+#3 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\TimedOutputAdapter.php(138): Phinx\Db\Adapter\AdapterWrapper->createTable
+#4 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\robmorgan\phinx\src\Phinx\Db\Table.php(628): Phinx\Db\Adapter\TimedOutputAdapter->createTable
+#5 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\migrations\install\20180220023152_create_collections_presets_table.php(63): Phinx\Db\Table->create
+#6 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\robmorgan\phinx\src\Phinx\Migration\Manager\Environment.php(124): CreateCollectionsPresetsTable->change
+#7 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\robmorgan\phinx\src\Phinx\Migration\Manager.php(375): Phinx\Migration\Manager\Environment->executeMigration
+#8 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\robmorgan\phinx\src\Phinx\Migration\Manager.php(351): Phinx\Migration\Manager->executeMigration
+#9 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\core\Directus\Util\Installation\InstallerUtils.php(235): Phinx\Migration\Manager->migrate
+#10 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\core\Directus\Util\Installation\InstallerUtils.php(202): Directus\Util\Installation\InstallerUtils::runMigrationAndSeeder
+#11 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\core\Directus\Services\ProjectService.php(114): Directus\Util\Installation\InstallerUtils::createTables
+#12 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\endpoints\ProjectsCreate.php(17): Directus\Services\ProjectService->create
+#13 [internal function]: Directus\Api\Routes\ProjectsCreate->__invoke
+#14 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\Handlers\Strategies\RequestResponse.php(40): call_user_func
+#15 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\Route.php(281): Slim\Handlers\Strategies\RequestResponse->__invoke
+#16 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(117): Slim\Route->__invoke
+#17 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\Route.php(268): Slim\Route->callMiddlewareStack
+#18 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\App.php(503): Slim\Route->run
+#19 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\core\Directus\Application\Http\Middleware\CorsMiddleware.php(71): Slim\App->__invoke
+#20 [internal function]: Directus\Application\Http\Middleware\CorsMiddleware->__invoke
+#21 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#22 [internal function]: Slim\DeferredCallable->__invoke
+#23 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#24 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(117): Slim\App->Slim\{closure}
+#25 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\App.php(392): Slim\App->callMiddlewareStack
+#26 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\App.php(297): Slim\App->process
+#27 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\core\Directus\Application\Application.php(161): Slim\App->run
+#28 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\public\index.php(5): Directus\Application\Application->run [] []
+[2021-05-07 17:23:51] api[].ERROR: PDOException: SQLSTATE[42000]: Syntax error or access violation: 1071 Specified key was too long; max key length is 767 bytes in D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\PdoAdapter.php:134
+Stack trace:
+#0 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\PdoAdapter.php(134): PDO->exec
+#1 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\MysqlAdapter.php(294): Phinx\Db\Adapter\PdoAdapter->execute
+#2 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\AdapterWrapper.php(351): Phinx\Db\Adapter\MysqlAdapter->createTable
+#3 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\TimedOutputAdapter.php(138): Phinx\Db\Adapter\AdapterWrapper->createTable
+#4 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\robmorgan\phinx\src\Phinx\Db\Table.php(628): Phinx\Db\Adapter\TimedOutputAdapter->createTable
+#5 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\migrations\install\20180220023152_create_collections_presets_table.php(63): Phinx\Db\Table->create
+#6 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\robmorgan\phinx\src\Phinx\Migration\Manager\Environment.php(124): CreateCollectionsPresetsTable->change
+#7 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\robmorgan\phinx\src\Phinx\Migration\Manager.php(375): Phinx\Migration\Manager\Environment->executeMigration
+#8 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\robmorgan\phinx\src\Phinx\Migration\Manager.php(351): Phinx\Migration\Manager->executeMigration
+#9 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\core\Directus\Util\Installation\InstallerUtils.php(235): Phinx\Migration\Manager->migrate
+#10 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\core\Directus\Util\Installation\InstallerUtils.php(202): Directus\Util\Installation\InstallerUtils::runMigrationAndSeeder
+#11 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\core\Directus\Services\ProjectService.php(114): Directus\Util\Installation\InstallerUtils::createTables
+#12 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\endpoints\ProjectsCreate.php(17): Directus\Services\ProjectService->create
+#13 [internal function]: Directus\Api\Routes\ProjectsCreate->__invoke
+#14 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\Handlers\Strategies\RequestResponse.php(40): call_user_func
+#15 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\Route.php(281): Slim\Handlers\Strategies\RequestResponse->__invoke
+#16 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(117): Slim\Route->__invoke
+#17 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\Route.php(268): Slim\Route->callMiddlewareStack
+#18 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\App.php(503): Slim\Route->run
+#19 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\core\Directus\Application\Http\Middleware\CorsMiddleware.php(71): Slim\App->__invoke
+#20 [internal function]: Directus\Application\Http\Middleware\CorsMiddleware->__invoke
+#21 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#22 [internal function]: Slim\DeferredCallable->__invoke
+#23 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#24 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(117): Slim\App->Slim\{closure}
+#25 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\App.php(392): Slim\App->callMiddlewareStack
+#26 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\App.php(297): Slim\App->process
+#27 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\core\Directus\Application\Application.php(161): Slim\App->run
+#28 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\public\index.php(5): Directus\Application\Application->run [] []
+[2021-05-07 17:24:09] api[my-project].ERROR: Zend\Db\Adapter\Exception\InvalidQueryException: Statement could not be executed (42S02 - 1146 - Table 'directus_v8_myproject.directus_settings' doesn't exist) in D:\Programs\xampp7.3\htdocs\directus_v8\packages\zend-db\src\Adapter\Driver\Pdo\Statement.php:244
+Stack trace:
+#0 D:\Programs\xampp7.3\htdocs\directus_v8\packages\zend-db\src\TableGateway\AbstractTableGateway.php(239): Zend\Db\Adapter\Driver\Pdo\Statement->execute
+#1 D:\Programs\xampp7.3\htdocs\directus_v8\packages\zend-db\src\TableGateway\AbstractTableGateway.php(209): Zend\Db\TableGateway\AbstractTableGateway->executeSelect
+#2 D:\Programs\xampp7.3\htdocs\directus_v8\packages\zend-db\src\TableGateway\AbstractTableGateway.php(196): Zend\Db\TableGateway\AbstractTableGateway->selectWith
+#3 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\core\Directus\Application\CoreServicesProvider.php(1133): Zend\Db\TableGateway\AbstractTableGateway->select
+#4 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\pimple\pimple\src\Pimple\Container.php(118): Directus\Application\CoreServicesProvider->Directus\Application\{closure}
+#5 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\core\Directus\Container\Container.php(27): Pimple\Container->offsetGet
+#6 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\helpers\settings.php(20): Directus\Container\Container->get
+#7 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\helpers\settings.php(35): Directus\get_directus_settings
+#8 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\helpers\settings.php(142): Directus\get_directus_setting
+#9 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\core\Directus\Application\Http\Middleware\ProxyMiddleware.php(16): Directus\get_trusted_proxies
+#10 [internal function]: Directus\Application\Http\Middleware\ProxyMiddleware->__invoke
+#11 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#12 [internal function]: Slim\DeferredCallable->__invoke
+#13 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#14 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\akrabat\ip-address-middleware\src\IpAddress.php(113): Slim\App->Slim\{closure}
+#15 [internal function]: RKA\Middleware\IpAddress->__invoke
+#16 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#17 [internal function]: Slim\DeferredCallable->__invoke
+#18 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#19 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\core\Directus\Application\Http\Middleware\CorsMiddleware.php(71): Slim\App->Slim\{closure}
+#20 [internal function]: Directus\Application\Http\Middleware\CorsMiddleware->__invoke
+#21 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#22 [internal function]: Slim\DeferredCallable->__invoke
+#23 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#24 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\core\Directus\Application\Http\Middleware\ResponseCacheMiddleware.php(63): Slim\App->Slim\{closure}
+#25 [internal function]: Directus\Application\Http\Middleware\ResponseCacheMiddleware->__invoke
+#26 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#27 [internal function]: Slim\DeferredCallable->__invoke
+#28 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#29 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(117): Slim\App->Slim\{closure}
+#30 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\App.php(392): Slim\App->callMiddlewareStack
+#31 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\App.php(297): Slim\App->process
+#32 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\core\Directus\Application\Application.php(161): Slim\App->run
+#33 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\public\index.php(5): Directus\Application\Application->run [] []
+[2021-05-07 17:24:10] api[my-project].ERROR: Zend\Db\Adapter\Exception\InvalidQueryException: Statement could not be executed (42S02 - 1146 - Table 'directus_v8_myproject.directus_settings' doesn't exist) in D:\Programs\xampp7.3\htdocs\directus_v8\packages\zend-db\src\Adapter\Driver\Pdo\Statement.php:244
+Stack trace:
+#0 D:\Programs\xampp7.3\htdocs\directus_v8\packages\zend-db\src\TableGateway\AbstractTableGateway.php(239): Zend\Db\Adapter\Driver\Pdo\Statement->execute
+#1 D:\Programs\xampp7.3\htdocs\directus_v8\packages\zend-db\src\TableGateway\AbstractTableGateway.php(209): Zend\Db\TableGateway\AbstractTableGateway->executeSelect
+#2 D:\Programs\xampp7.3\htdocs\directus_v8\packages\zend-db\src\TableGateway\AbstractTableGateway.php(196): Zend\Db\TableGateway\AbstractTableGateway->selectWith
+#3 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\core\Directus\Application\CoreServicesProvider.php(1133): Zend\Db\TableGateway\AbstractTableGateway->select
+#4 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\pimple\pimple\src\Pimple\Container.php(118): Directus\Application\CoreServicesProvider->Directus\Application\{closure}
+#5 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\core\Directus\Container\Container.php(27): Pimple\Container->offsetGet
+#6 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\helpers\settings.php(20): Directus\Container\Container->get
+#7 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\helpers\settings.php(35): Directus\get_directus_settings
+#8 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\helpers\settings.php(142): Directus\get_directus_setting
+#9 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\core\Directus\Application\Http\Middleware\ProxyMiddleware.php(16): Directus\get_trusted_proxies
+#10 [internal function]: Directus\Application\Http\Middleware\ProxyMiddleware->__invoke
+#11 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#12 [internal function]: Slim\DeferredCallable->__invoke
+#13 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#14 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\akrabat\ip-address-middleware\src\IpAddress.php(113): Slim\App->Slim\{closure}
+#15 [internal function]: RKA\Middleware\IpAddress->__invoke
+#16 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#17 [internal function]: Slim\DeferredCallable->__invoke
+#18 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#19 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\core\Directus\Application\Http\Middleware\CorsMiddleware.php(71): Slim\App->Slim\{closure}
+#20 [internal function]: Directus\Application\Http\Middleware\CorsMiddleware->__invoke
+#21 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#22 [internal function]: Slim\DeferredCallable->__invoke
+#23 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#24 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\core\Directus\Application\Http\Middleware\ResponseCacheMiddleware.php(63): Slim\App->Slim\{closure}
+#25 [internal function]: Directus\Application\Http\Middleware\ResponseCacheMiddleware->__invoke
+#26 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#27 [internal function]: Slim\DeferredCallable->__invoke
+#28 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#29 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(117): Slim\App->Slim\{closure}
+#30 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\App.php(392): Slim\App->callMiddlewareStack
+#31 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\App.php(297): Slim\App->process
+#32 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\core\Directus\Application\Application.php(161): Slim\App->run
+#33 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\public\index.php(5): Directus\Application\Application->run [] []
+[2021-05-07 17:26:02] api[my-project].ERROR: Zend\Db\Adapter\Exception\InvalidQueryException: Statement could not be executed (42S02 - 1146 - Table 'directus_v8_myproject.directus_settings' doesn't exist) in D:\Programs\xampp7.3\htdocs\directus_v8\packages\zend-db\src\Adapter\Driver\Pdo\Statement.php:244
+Stack trace:
+#0 D:\Programs\xampp7.3\htdocs\directus_v8\packages\zend-db\src\TableGateway\AbstractTableGateway.php(239): Zend\Db\Adapter\Driver\Pdo\Statement->execute
+#1 D:\Programs\xampp7.3\htdocs\directus_v8\packages\zend-db\src\TableGateway\AbstractTableGateway.php(209): Zend\Db\TableGateway\AbstractTableGateway->executeSelect
+#2 D:\Programs\xampp7.3\htdocs\directus_v8\packages\zend-db\src\TableGateway\AbstractTableGateway.php(196): Zend\Db\TableGateway\AbstractTableGateway->selectWith
+#3 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\core\Directus\Application\CoreServicesProvider.php(1133): Zend\Db\TableGateway\AbstractTableGateway->select
+#4 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\pimple\pimple\src\Pimple\Container.php(118): Directus\Application\CoreServicesProvider->Directus\Application\{closure}
+#5 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\core\Directus\Container\Container.php(27): Pimple\Container->offsetGet
+#6 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\helpers\settings.php(20): Directus\Container\Container->get
+#7 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\helpers\settings.php(35): Directus\get_directus_settings
+#8 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\helpers\settings.php(142): Directus\get_directus_setting
+#9 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\core\Directus\Application\Http\Middleware\ProxyMiddleware.php(16): Directus\get_trusted_proxies
+#10 [internal function]: Directus\Application\Http\Middleware\ProxyMiddleware->__invoke
+#11 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#12 [internal function]: Slim\DeferredCallable->__invoke
+#13 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#14 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\akrabat\ip-address-middleware\src\IpAddress.php(113): Slim\App->Slim\{closure}
+#15 [internal function]: RKA\Middleware\IpAddress->__invoke
+#16 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#17 [internal function]: Slim\DeferredCallable->__invoke
+#18 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#19 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\core\Directus\Application\Http\Middleware\CorsMiddleware.php(71): Slim\App->Slim\{closure}
+#20 [internal function]: Directus\Application\Http\Middleware\CorsMiddleware->__invoke
+#21 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#22 [internal function]: Slim\DeferredCallable->__invoke
+#23 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#24 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\core\Directus\Application\Http\Middleware\ResponseCacheMiddleware.php(63): Slim\App->Slim\{closure}
+#25 [internal function]: Directus\Application\Http\Middleware\ResponseCacheMiddleware->__invoke
+#26 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#27 [internal function]: Slim\DeferredCallable->__invoke
+#28 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#29 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(117): Slim\App->Slim\{closure}
+#30 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\App.php(392): Slim\App->callMiddlewareStack
+#31 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\App.php(297): Slim\App->process
+#32 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\core\Directus\Application\Application.php(161): Slim\App->run
+#33 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\public\index.php(5): Directus\Application\Application->run [] []
+[2021-05-07 17:26:23] api[].ERROR: Directus\Exception\UnauthorizedException: Permission denied: Superadmin Only in D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\core\Directus\Services\ServerService.php:85
+Stack trace:
+#0 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\endpoints\Server.php(74): Directus\Services\ServerService->validateServerInfo
+#1 [internal function]: Directus\Api\Routes\Server->getInfo
+#2 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\Handlers\Strategies\RequestResponse.php(40): call_user_func
+#3 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\Route.php(281): Slim\Handlers\Strategies\RequestResponse->__invoke
+#4 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(117): Slim\Route->__invoke
+#5 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\Route.php(268): Slim\Route->callMiddlewareStack
+#6 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\App.php(503): Slim\Route->run
+#7 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\core\Directus\Application\Http\Middleware\CorsMiddleware.php(71): Slim\App->__invoke
+#8 [internal function]: Directus\Application\Http\Middleware\CorsMiddleware->__invoke
+#9 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#10 [internal function]: Slim\DeferredCallable->__invoke
+#11 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#12 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(117): Slim\App->Slim\{closure}
+#13 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\App.php(392): Slim\App->callMiddlewareStack
+#14 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\App.php(297): Slim\App->process
+#15 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\core\Directus\Application\Application.php(161): Slim\App->run
+#16 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\public\index.php(5): Directus\Application\Application->run [] []
+[2021-05-07 17:26:56] api[my-project].ERROR: Zend\Db\Adapter\Exception\InvalidQueryException: Statement could not be executed (42S02 - 1146 - Table 'directus_v8_myproject.directus_settings' doesn't exist) in D:\Programs\xampp7.3\htdocs\directus_v8\packages\zend-db\src\Adapter\Driver\Pdo\Statement.php:244
+Stack trace:
+#0 D:\Programs\xampp7.3\htdocs\directus_v8\packages\zend-db\src\TableGateway\AbstractTableGateway.php(239): Zend\Db\Adapter\Driver\Pdo\Statement->execute
+#1 D:\Programs\xampp7.3\htdocs\directus_v8\packages\zend-db\src\TableGateway\AbstractTableGateway.php(209): Zend\Db\TableGateway\AbstractTableGateway->executeSelect
+#2 D:\Programs\xampp7.3\htdocs\directus_v8\packages\zend-db\src\TableGateway\AbstractTableGateway.php(196): Zend\Db\TableGateway\AbstractTableGateway->selectWith
+#3 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\core\Directus\Application\CoreServicesProvider.php(1133): Zend\Db\TableGateway\AbstractTableGateway->select
+#4 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\pimple\pimple\src\Pimple\Container.php(118): Directus\Application\CoreServicesProvider->Directus\Application\{closure}
+#5 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\core\Directus\Container\Container.php(27): Pimple\Container->offsetGet
+#6 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\helpers\settings.php(20): Directus\Container\Container->get
+#7 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\helpers\settings.php(35): Directus\get_directus_settings
+#8 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\helpers\settings.php(142): Directus\get_directus_setting
+#9 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\core\Directus\Application\Http\Middleware\ProxyMiddleware.php(16): Directus\get_trusted_proxies
+#10 [internal function]: Directus\Application\Http\Middleware\ProxyMiddleware->__invoke
+#11 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#12 [internal function]: Slim\DeferredCallable->__invoke
+#13 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#14 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\akrabat\ip-address-middleware\src\IpAddress.php(113): Slim\App->Slim\{closure}
+#15 [internal function]: RKA\Middleware\IpAddress->__invoke
+#16 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#17 [internal function]: Slim\DeferredCallable->__invoke
+#18 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#19 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\core\Directus\Application\Http\Middleware\CorsMiddleware.php(71): Slim\App->Slim\{closure}
+#20 [internal function]: Directus\Application\Http\Middleware\CorsMiddleware->__invoke
+#21 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#22 [internal function]: Slim\DeferredCallable->__invoke
+#23 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#24 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\core\Directus\Application\Http\Middleware\ResponseCacheMiddleware.php(63): Slim\App->Slim\{closure}
+#25 [internal function]: Directus\Application\Http\Middleware\ResponseCacheMiddleware->__invoke
+#26 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#27 [internal function]: Slim\DeferredCallable->__invoke
+#28 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#29 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(117): Slim\App->Slim\{closure}
+#30 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\App.php(392): Slim\App->callMiddlewareStack
+#31 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\App.php(297): Slim\App->process
+#32 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\core\Directus\Application\Application.php(161): Slim\App->run
+#33 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\public\index.php(5): Directus\Application\Application->run [] []
+[2021-05-07 17:26:57] api[my-project].ERROR: Zend\Db\Adapter\Exception\InvalidQueryException: Statement could not be executed (42S02 - 1146 - Table 'directus_v8_myproject.directus_settings' doesn't exist) in D:\Programs\xampp7.3\htdocs\directus_v8\packages\zend-db\src\Adapter\Driver\Pdo\Statement.php:244
+Stack trace:
+#0 D:\Programs\xampp7.3\htdocs\directus_v8\packages\zend-db\src\TableGateway\AbstractTableGateway.php(239): Zend\Db\Adapter\Driver\Pdo\Statement->execute
+#1 D:\Programs\xampp7.3\htdocs\directus_v8\packages\zend-db\src\TableGateway\AbstractTableGateway.php(209): Zend\Db\TableGateway\AbstractTableGateway->executeSelect
+#2 D:\Programs\xampp7.3\htdocs\directus_v8\packages\zend-db\src\TableGateway\AbstractTableGateway.php(196): Zend\Db\TableGateway\AbstractTableGateway->selectWith
+#3 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\core\Directus\Application\CoreServicesProvider.php(1133): Zend\Db\TableGateway\AbstractTableGateway->select
+#4 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\pimple\pimple\src\Pimple\Container.php(118): Directus\Application\CoreServicesProvider->Directus\Application\{closure}
+#5 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\core\Directus\Container\Container.php(27): Pimple\Container->offsetGet
+#6 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\helpers\settings.php(20): Directus\Container\Container->get
+#7 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\helpers\settings.php(35): Directus\get_directus_settings
+#8 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\helpers\settings.php(142): Directus\get_directus_setting
+#9 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\core\Directus\Application\Http\Middleware\ProxyMiddleware.php(16): Directus\get_trusted_proxies
+#10 [internal function]: Directus\Application\Http\Middleware\ProxyMiddleware->__invoke
+#11 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#12 [internal function]: Slim\DeferredCallable->__invoke
+#13 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#14 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\akrabat\ip-address-middleware\src\IpAddress.php(113): Slim\App->Slim\{closure}
+#15 [internal function]: RKA\Middleware\IpAddress->__invoke
+#16 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#17 [internal function]: Slim\DeferredCallable->__invoke
+#18 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#19 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\core\Directus\Application\Http\Middleware\CorsMiddleware.php(71): Slim\App->Slim\{closure}
+#20 [internal function]: Directus\Application\Http\Middleware\CorsMiddleware->__invoke
+#21 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#22 [internal function]: Slim\DeferredCallable->__invoke
+#23 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#24 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\core\Directus\Application\Http\Middleware\ResponseCacheMiddleware.php(63): Slim\App->Slim\{closure}
+#25 [internal function]: Directus\Application\Http\Middleware\ResponseCacheMiddleware->__invoke
+#26 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#27 [internal function]: Slim\DeferredCallable->__invoke
+#28 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#29 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(117): Slim\App->Slim\{closure}
+#30 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\App.php(392): Slim\App->callMiddlewareStack
+#31 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\App.php(297): Slim\App->process
+#32 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\core\Directus\Application\Application.php(161): Slim\App->run
+#33 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\public\index.php(5): Directus\Application\Application->run [] []
+[2021-05-07 17:28:13] api[my-project].ERROR: Zend\Db\Adapter\Exception\InvalidQueryException: Statement could not be executed (42S02 - 1146 - Table 'directus_v8_myproject.directus_settings' doesn't exist) in D:\Programs\xampp7.3\htdocs\directus_v8\packages\zend-db\src\Adapter\Driver\Pdo\Statement.php:244
+Stack trace:
+#0 D:\Programs\xampp7.3\htdocs\directus_v8\packages\zend-db\src\TableGateway\AbstractTableGateway.php(239): Zend\Db\Adapter\Driver\Pdo\Statement->execute
+#1 D:\Programs\xampp7.3\htdocs\directus_v8\packages\zend-db\src\TableGateway\AbstractTableGateway.php(209): Zend\Db\TableGateway\AbstractTableGateway->executeSelect
+#2 D:\Programs\xampp7.3\htdocs\directus_v8\packages\zend-db\src\TableGateway\AbstractTableGateway.php(196): Zend\Db\TableGateway\AbstractTableGateway->selectWith
+#3 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\core\Directus\Application\CoreServicesProvider.php(1133): Zend\Db\TableGateway\AbstractTableGateway->select
+#4 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\pimple\pimple\src\Pimple\Container.php(118): Directus\Application\CoreServicesProvider->Directus\Application\{closure}
+#5 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\core\Directus\Container\Container.php(27): Pimple\Container->offsetGet
+#6 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\helpers\settings.php(20): Directus\Container\Container->get
+#7 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\helpers\settings.php(35): Directus\get_directus_settings
+#8 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\helpers\settings.php(142): Directus\get_directus_setting
+#9 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\core\Directus\Application\Http\Middleware\ProxyMiddleware.php(16): Directus\get_trusted_proxies
+#10 [internal function]: Directus\Application\Http\Middleware\ProxyMiddleware->__invoke
+#11 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#12 [internal function]: Slim\DeferredCallable->__invoke
+#13 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#14 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\akrabat\ip-address-middleware\src\IpAddress.php(113): Slim\App->Slim\{closure}
+#15 [internal function]: RKA\Middleware\IpAddress->__invoke
+#16 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#17 [internal function]: Slim\DeferredCallable->__invoke
+#18 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#19 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\core\Directus\Application\Http\Middleware\CorsMiddleware.php(71): Slim\App->Slim\{closure}
+#20 [internal function]: Directus\Application\Http\Middleware\CorsMiddleware->__invoke
+#21 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#22 [internal function]: Slim\DeferredCallable->__invoke
+#23 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#24 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\core\Directus\Application\Http\Middleware\ResponseCacheMiddleware.php(63): Slim\App->Slim\{closure}
+#25 [internal function]: Directus\Application\Http\Middleware\ResponseCacheMiddleware->__invoke
+#26 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#27 [internal function]: Slim\DeferredCallable->__invoke
+#28 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#29 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(117): Slim\App->Slim\{closure}
+#30 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\App.php(392): Slim\App->callMiddlewareStack
+#31 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\App.php(297): Slim\App->process
+#32 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\core\Directus\Application\Application.php(161): Slim\App->run
+#33 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\public\index.php(5): Directus\Application\Application->run [] []
+[2021-05-07 17:28:14] api[my-project].ERROR: Zend\Db\Adapter\Exception\InvalidQueryException: Statement could not be executed (42S02 - 1146 - Table 'directus_v8_myproject.directus_settings' doesn't exist) in D:\Programs\xampp7.3\htdocs\directus_v8\packages\zend-db\src\Adapter\Driver\Pdo\Statement.php:244
+Stack trace:
+#0 D:\Programs\xampp7.3\htdocs\directus_v8\packages\zend-db\src\TableGateway\AbstractTableGateway.php(239): Zend\Db\Adapter\Driver\Pdo\Statement->execute
+#1 D:\Programs\xampp7.3\htdocs\directus_v8\packages\zend-db\src\TableGateway\AbstractTableGateway.php(209): Zend\Db\TableGateway\AbstractTableGateway->executeSelect
+#2 D:\Programs\xampp7.3\htdocs\directus_v8\packages\zend-db\src\TableGateway\AbstractTableGateway.php(196): Zend\Db\TableGateway\AbstractTableGateway->selectWith
+#3 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\core\Directus\Application\CoreServicesProvider.php(1133): Zend\Db\TableGateway\AbstractTableGateway->select
+#4 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\pimple\pimple\src\Pimple\Container.php(118): Directus\Application\CoreServicesProvider->Directus\Application\{closure}
+#5 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\core\Directus\Container\Container.php(27): Pimple\Container->offsetGet
+#6 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\helpers\settings.php(20): Directus\Container\Container->get
+#7 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\helpers\settings.php(35): Directus\get_directus_settings
+#8 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\helpers\settings.php(142): Directus\get_directus_setting
+#9 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\core\Directus\Application\Http\Middleware\ProxyMiddleware.php(16): Directus\get_trusted_proxies
+#10 [internal function]: Directus\Application\Http\Middleware\ProxyMiddleware->__invoke
+#11 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#12 [internal function]: Slim\DeferredCallable->__invoke
+#13 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#14 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\akrabat\ip-address-middleware\src\IpAddress.php(113): Slim\App->Slim\{closure}
+#15 [internal function]: RKA\Middleware\IpAddress->__invoke
+#16 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#17 [internal function]: Slim\DeferredCallable->__invoke
+#18 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#19 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\core\Directus\Application\Http\Middleware\CorsMiddleware.php(71): Slim\App->Slim\{closure}
+#20 [internal function]: Directus\Application\Http\Middleware\CorsMiddleware->__invoke
+#21 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#22 [internal function]: Slim\DeferredCallable->__invoke
+#23 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#24 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\core\Directus\Application\Http\Middleware\ResponseCacheMiddleware.php(63): Slim\App->Slim\{closure}
+#25 [internal function]: Directus\Application\Http\Middleware\ResponseCacheMiddleware->__invoke
+#26 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#27 [internal function]: Slim\DeferredCallable->__invoke
+#28 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#29 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(117): Slim\App->Slim\{closure}
+#30 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\App.php(392): Slim\App->callMiddlewareStack
+#31 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\App.php(297): Slim\App->process
+#32 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\core\Directus\Application\Application.php(161): Slim\App->run
+#33 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\public\index.php(5): Directus\Application\Application->run [] []
+[2021-05-07 17:29:06] api[my-project].ERROR: Zend\Db\Adapter\Exception\InvalidQueryException: Statement could not be executed (42S02 - 1146 - Table 'directus_v8_myproject.directus_settings' doesn't exist) in D:\Programs\xampp7.3\htdocs\directus_v8\packages\zend-db\src\Adapter\Driver\Pdo\Statement.php:244
+Stack trace:
+#0 D:\Programs\xampp7.3\htdocs\directus_v8\packages\zend-db\src\TableGateway\AbstractTableGateway.php(239): Zend\Db\Adapter\Driver\Pdo\Statement->execute
+#1 D:\Programs\xampp7.3\htdocs\directus_v8\packages\zend-db\src\TableGateway\AbstractTableGateway.php(209): Zend\Db\TableGateway\AbstractTableGateway->executeSelect
+#2 D:\Programs\xampp7.3\htdocs\directus_v8\packages\zend-db\src\TableGateway\AbstractTableGateway.php(196): Zend\Db\TableGateway\AbstractTableGateway->selectWith
+#3 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\core\Directus\Application\CoreServicesProvider.php(1133): Zend\Db\TableGateway\AbstractTableGateway->select
+#4 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\pimple\pimple\src\Pimple\Container.php(118): Directus\Application\CoreServicesProvider->Directus\Application\{closure}
+#5 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\core\Directus\Container\Container.php(27): Pimple\Container->offsetGet
+#6 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\helpers\settings.php(20): Directus\Container\Container->get
+#7 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\helpers\settings.php(35): Directus\get_directus_settings
+#8 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\helpers\settings.php(142): Directus\get_directus_setting
+#9 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\core\Directus\Application\Http\Middleware\ProxyMiddleware.php(16): Directus\get_trusted_proxies
+#10 [internal function]: Directus\Application\Http\Middleware\ProxyMiddleware->__invoke
+#11 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#12 [internal function]: Slim\DeferredCallable->__invoke
+#13 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#14 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\akrabat\ip-address-middleware\src\IpAddress.php(113): Slim\App->Slim\{closure}
+#15 [internal function]: RKA\Middleware\IpAddress->__invoke
+#16 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#17 [internal function]: Slim\DeferredCallable->__invoke
+#18 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#19 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\core\Directus\Application\Http\Middleware\CorsMiddleware.php(71): Slim\App->Slim\{closure}
+#20 [internal function]: Directus\Application\Http\Middleware\CorsMiddleware->__invoke
+#21 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#22 [internal function]: Slim\DeferredCallable->__invoke
+#23 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#24 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\core\Directus\Application\Http\Middleware\ResponseCacheMiddleware.php(63): Slim\App->Slim\{closure}
+#25 [internal function]: Directus\Application\Http\Middleware\ResponseCacheMiddleware->__invoke
+#26 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#27 [internal function]: Slim\DeferredCallable->__invoke
+#28 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#29 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(117): Slim\App->Slim\{closure}
+#30 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\App.php(392): Slim\App->callMiddlewareStack
+#31 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\App.php(297): Slim\App->process
+#32 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\core\Directus\Application\Application.php(161): Slim\App->run
+#33 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\public\index.php(5): Directus\Application\Application->run [] []
+[2021-05-07 17:29:54] api[].ERROR: Directus\Exception\ProjectAlreadyExistException: A project named "my-project" already exists. in D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\core\Directus\Services\ProjectService.php:98
+Stack trace:
+#0 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\endpoints\ProjectsCreate.php(17): Directus\Services\ProjectService->create
+#1 [internal function]: Directus\Api\Routes\ProjectsCreate->__invoke
+#2 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\Handlers\Strategies\RequestResponse.php(40): call_user_func
+#3 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\Route.php(281): Slim\Handlers\Strategies\RequestResponse->__invoke
+#4 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(117): Slim\Route->__invoke
+#5 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\Route.php(268): Slim\Route->callMiddlewareStack
+#6 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\App.php(503): Slim\Route->run
+#7 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\core\Directus\Application\Http\Middleware\CorsMiddleware.php(71): Slim\App->__invoke
+#8 [internal function]: Directus\Application\Http\Middleware\CorsMiddleware->__invoke
+#9 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#10 [internal function]: Slim\DeferredCallable->__invoke
+#11 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#12 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(117): Slim\App->Slim\{closure}
+#13 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\App.php(392): Slim\App->callMiddlewareStack
+#14 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\App.php(297): Slim\App->process
+#15 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\core\Directus\Application\Application.php(161): Slim\App->run
+#16 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\public\index.php(5): Directus\Application\Application->run [] []
+[2021-05-07 17:30:14] api[].ERROR: PDOException: SQLSTATE[42000]: Syntax error or access violation: 1071 Specified key was too long; max key length is 767 bytes in D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\PdoAdapter.php:134
+Stack trace:
+#0 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\PdoAdapter.php(134): PDO->exec
+#1 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\MysqlAdapter.php(294): Phinx\Db\Adapter\PdoAdapter->execute
+#2 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\AdapterWrapper.php(351): Phinx\Db\Adapter\MysqlAdapter->createTable
+#3 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\TimedOutputAdapter.php(138): Phinx\Db\Adapter\AdapterWrapper->createTable
+#4 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\robmorgan\phinx\src\Phinx\Db\Table.php(628): Phinx\Db\Adapter\TimedOutputAdapter->createTable
+#5 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\migrations\install\20180220023152_create_collections_presets_table.php(63): Phinx\Db\Table->create
+#6 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\robmorgan\phinx\src\Phinx\Migration\Manager\Environment.php(124): CreateCollectionsPresetsTable->change
+#7 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\robmorgan\phinx\src\Phinx\Migration\Manager.php(375): Phinx\Migration\Manager\Environment->executeMigration
+#8 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\robmorgan\phinx\src\Phinx\Migration\Manager.php(351): Phinx\Migration\Manager->executeMigration
+#9 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\core\Directus\Util\Installation\InstallerUtils.php(235): Phinx\Migration\Manager->migrate
+#10 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\core\Directus\Util\Installation\InstallerUtils.php(202): Directus\Util\Installation\InstallerUtils::runMigrationAndSeeder
+#11 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\core\Directus\Services\ProjectService.php(114): Directus\Util\Installation\InstallerUtils::createTables
+#12 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\endpoints\ProjectsCreate.php(17): Directus\Services\ProjectService->create
+#13 [internal function]: Directus\Api\Routes\ProjectsCreate->__invoke
+#14 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\Handlers\Strategies\RequestResponse.php(40): call_user_func
+#15 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\Route.php(281): Slim\Handlers\Strategies\RequestResponse->__invoke
+#16 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(117): Slim\Route->__invoke
+#17 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\Route.php(268): Slim\Route->callMiddlewareStack
+#18 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\App.php(503): Slim\Route->run
+#19 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\core\Directus\Application\Http\Middleware\CorsMiddleware.php(71): Slim\App->__invoke
+#20 [internal function]: Directus\Application\Http\Middleware\CorsMiddleware->__invoke
+#21 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#22 [internal function]: Slim\DeferredCallable->__invoke
+#23 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#24 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(117): Slim\App->Slim\{closure}
+#25 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\App.php(392): Slim\App->callMiddlewareStack
+#26 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\App.php(297): Slim\App->process
+#27 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\core\Directus\Application\Application.php(161): Slim\App->run
+#28 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\public\index.php(5): Directus\Application\Application->run [] []
+[2021-05-07 17:31:10] api[].ERROR: Directus\Exception\NotInstalledException: This Directus instance has not been configured. Install via the Directus App (eg: /admin) or read more about configuration at: https://docs.directus.io/getting-started/installation.html#configure in D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\endpoints\Server.php:46
+Stack trace:
+#0 [internal function]: Directus\Api\Routes\Server->projects
+#1 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\Handlers\Strategies\RequestResponse.php(40): call_user_func
+#2 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\Route.php(281): Slim\Handlers\Strategies\RequestResponse->__invoke
+#3 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(117): Slim\Route->__invoke
+#4 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\Route.php(268): Slim\Route->callMiddlewareStack
+#5 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\App.php(503): Slim\Route->run
+#6 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\core\Directus\Application\Http\Middleware\CorsMiddleware.php(71): Slim\App->__invoke
+#7 [internal function]: Directus\Application\Http\Middleware\CorsMiddleware->__invoke
+#8 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#9 [internal function]: Slim\DeferredCallable->__invoke
+#10 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#11 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(117): Slim\App->Slim\{closure}
+#12 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\App.php(392): Slim\App->callMiddlewareStack
+#13 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\App.php(297): Slim\App->process
+#14 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\core\Directus\Application\Application.php(161): Slim\App->run
+#15 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\public\index.php(5): Directus\Application\Application->run [] []
+[2021-05-07 17:36:24] api[].ERROR: PDOException: SQLSTATE[42000]: Syntax error or access violation: 1071 Specified key was too long; max key length is 767 bytes in D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\PdoAdapter.php:134
+Stack trace:
+#0 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\PdoAdapter.php(134): PDO->exec
+#1 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\MysqlAdapter.php(294): Phinx\Db\Adapter\PdoAdapter->execute
+#2 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\AdapterWrapper.php(351): Phinx\Db\Adapter\MysqlAdapter->createTable
+#3 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\TimedOutputAdapter.php(138): Phinx\Db\Adapter\AdapterWrapper->createTable
+#4 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\robmorgan\phinx\src\Phinx\Db\Table.php(628): Phinx\Db\Adapter\TimedOutputAdapter->createTable
+#5 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\migrations\install\20180220023152_create_collections_presets_table.php(63): Phinx\Db\Table->create
+#6 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\robmorgan\phinx\src\Phinx\Migration\Manager\Environment.php(124): CreateCollectionsPresetsTable->change
+#7 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\robmorgan\phinx\src\Phinx\Migration\Manager.php(375): Phinx\Migration\Manager\Environment->executeMigration
+#8 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\robmorgan\phinx\src\Phinx\Migration\Manager.php(351): Phinx\Migration\Manager->executeMigration
+#9 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\core\Directus\Util\Installation\InstallerUtils.php(235): Phinx\Migration\Manager->migrate
+#10 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\core\Directus\Util\Installation\InstallerUtils.php(202): Directus\Util\Installation\InstallerUtils::runMigrationAndSeeder
+#11 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\core\Directus\Services\ProjectService.php(114): Directus\Util\Installation\InstallerUtils::createTables
+#12 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\endpoints\ProjectsCreate.php(17): Directus\Services\ProjectService->create
+#13 [internal function]: Directus\Api\Routes\ProjectsCreate->__invoke
+#14 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\Handlers\Strategies\RequestResponse.php(40): call_user_func
+#15 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\Route.php(281): Slim\Handlers\Strategies\RequestResponse->__invoke
+#16 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(117): Slim\Route->__invoke
+#17 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\Route.php(268): Slim\Route->callMiddlewareStack
+#18 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\App.php(503): Slim\Route->run
+#19 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\core\Directus\Application\Http\Middleware\CorsMiddleware.php(71): Slim\App->__invoke
+#20 [internal function]: Directus\Application\Http\Middleware\CorsMiddleware->__invoke
+#21 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#22 [internal function]: Slim\DeferredCallable->__invoke
+#23 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#24 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(117): Slim\App->Slim\{closure}
+#25 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\App.php(392): Slim\App->callMiddlewareStack
+#26 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\App.php(297): Slim\App->process
+#27 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\core\Directus\Application\Application.php(161): Slim\App->run
+#28 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\public\index.php(5): Directus\Application\Application->run [] []

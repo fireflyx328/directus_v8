@@ -1,0 +1,13 @@
+[2021-05-16 16:23:45] api[HNAP1].ERROR: Directus\Exception\UnauthorizedException: Unauthorized request in D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\helpers\app.php:283
+Stack trace:
+#0 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\App.php(518): Directus\{closure}
+#1 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\core\Directus\Application\Http\Middleware\CorsMiddleware.php(71): Slim\App->__invoke
+#2 [internal function]: Directus\Application\Http\Middleware\CorsMiddleware->__invoke
+#3 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#4 [internal function]: Slim\DeferredCallable->__invoke
+#5 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#6 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(117): Slim\App->Slim\{closure}
+#7 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\App.php(392): Slim\App->callMiddlewareStack
+#8 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\vendor\slim\slim\Slim\App.php(297): Slim\App->process
+#9 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\src\core\Directus\Application\Application.php(161): Slim\App->run
+#10 D:\Programs\xampp7.3\htdocs\directus_v8\_directus-v8-build\public\index.php(5): Directus\Application\Application->run [] []
